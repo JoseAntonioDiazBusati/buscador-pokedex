@@ -4,3 +4,8 @@ h1{
    font-style: italic;
    color: red;
 }
+
+img{
+   height: 250px;
+   width: 250px;
+}
