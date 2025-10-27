@@ -24,7 +24,7 @@ async function mostrarPokemon(pokemon){
     div.innerHTML = `
         <div class="pokemon-card">
             <div class="pokemon-img">
-                <img src="${pokemon.sprites.front_default}" alt="${pokemon.name}">
+                <img src="${pokemon.sprites.other['official-artwork'].front_default}" alt="${pokemon.name}">
             </div>
             <div class="pokemon-info">
                 <h2>${pokemon.name}</h2>
@@ -49,7 +49,7 @@ async function mostrarPokemon(pokemon){
 
             contenedor.innerHTML += `
                 <div class="forma-card">
-                    <img src="${formData.sprites.front_default}" alt="${formData.name}">
+                    <img src="${formData.sprites.other['official-artwork'].front_default}" alt="${formData.name}">
                     <h2>${formData.name}</h2>
                     <p>Tipo: ${formTypes}</p>
                     <p>Peso: ${formData.weight} kg</p>
